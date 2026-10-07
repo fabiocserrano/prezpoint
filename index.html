@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrezPoint — macOS Pointer Overlay</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "SF Pro Display", "Helvetica Neue", sans-serif;
+    background: #0a0a0f;
+    color: #f5f5f7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+  }
+  .card {
+    max-width: 560px;
+    width: 100%;
+    text-align: center;
+  }
+  .icon {
+    width: 96px;
+    height: 96px;
+    background: linear-gradient(135deg, #0a84ff, #5e5ce6);
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    margin: 0 auto 28px;
+  }
+  h1 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 12px;
+  }
+  .tagline {
+    font-size: 18px;
+    color: #98989d;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(10,132,255,.15);
+    border: 1px solid rgba(10,132,255,.3);
+    color: #0a84ff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 48px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    text-align: left;
+    margin-bottom: 48px;
+  }
+  .feature {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 14px;
+    color: #d1d1d6;
+    line-height: 1.4;
+  }
+  .feature strong { display: block; color: #f5f5f7; margin-bottom: 4px; }
+  .cta {
+    display: inline-block;
+    background: #0a84ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 14px;
+    text-decoration: none;
+    margin-bottom: 24px;
+  }
+  .links {
+    font-size: 13px;
+    color: #6e6e73;
+  }
+  .links a { color: #6e6e73; text-decoration: underline; }
+  .links a:hover { color: #98989d; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="icon">🎯</div>
+  <h1>PrezPoint</h1>
+  <p class="tagline">A lightweight macOS overlay that makes your cursor impossible to miss during presentations and demos.</p>
+  <div class="badge">Available on the Mac App Store</div>
+  <div class="features">
+    <div class="feature"><strong>Spotlight</strong>Dims the screen with an illuminated circle around the cursor.</div>
+    <div class="feature"><strong>Laser Pointer</strong>Glowing red dot with a motion trail.</div>
+    <div class="feature"><strong>Loupe Magnifier</strong>Real-time 2× zoom lens following the cursor.</div>
+    <div class="feature"><strong>Blur Mask</strong>Frosted privacy overlay for sensitive content.</div>
+    <div class="feature"><strong>Row &amp; Column Focus</strong>Reading guides for spreadsheets and tables.</div>
+    <div class="feature"><strong>Freehand Drawing</strong>Sketch annotations on screen. Clear with ⌘⌫.</div>
+  </div>
+  <p class="links"><a href="privacy/">Privacy Policy</a></p>
+</div>
+</body>
+</html>
